@@ -1,0 +1,340 @@
+ body {
+    background-color: rgb(17, 85, 0);
+    font-family: "Quicksand", sans-serif;
+    color: black;
+}
+
+.quicksand {
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+header {
+    height: 120px;
+    width: 100%;
+    background: rgba(69, 69, 69, 0.235);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0.2vh 0.2vh 0.2vh 0.2vh rgba(69, 69, 69, 0.101);
+}
+
+.header-logo {
+    height: 80px;
+    width: auto;
+    z-index: 9999;
+    margin-top: 0vh;
+    margin-left: 15%;
+    transition: 0.5s;
+}
+
+.header-logo:hover {
+  height: 90px;
+  width: auto;
+  transition: 0.5s;
+}
+
+  .navbar-brand,
+  .navbar-nav .nav-link {
+    color: black;
+    position: relative;
+    transition: color 0.3s;
+    font-size: 2.5vh;
+    margin-top: 2vh;
+    margin: 5vh;
+  }
+
+  .navbar-brand:hover,
+  .navbar-nav .nav-link:hover {
+    color: white;
+  }
+
+  .navbar-toggler {
+    color: white;
+    border: none;
+  }
+
+  .navbar-toggler-icon {
+    color: pink;
+  }
+
+  .navbar-nav .nav-link::before {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: width 0.3s;
+    position: absolute;
+    top: -5px;
+    left: 0;
+  }
+
+  .navbar-nav .nav-link:hover::before {
+    width: 100%;
+  }
+
+  .navbar-nav .nav-item.active .nav-link::before {
+    width: 100%;
+  }
+
+  .navbar-nav .nav-item.active .nav-link {
+    color: white;
+  }
+
+.carousel-item img {
+    width: 100%;
+    height: 500px; 
+    object-fit: cover;
+}
+
+.section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+footer {
+    height: 100px;
+    width: 100%;
+    background: rgba(69, 69, 69, 0);
+    display: block;
+    text-align: center;
+    margin-top: auto;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.carousel-inner {
+  box-shadow: 0.7vh 0.7vh 0.7vh 0.7vh rgba(69, 69, 69, 0.101);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  
+}
+
+.card-header {
+  text-align: center;
+  font-style: italic;
+  background-image: linear-gradient(275deg , rgba(20, 208, 255, 0.459), rgba(20, 208, 255, 0), transparent);
+}
+
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+  .card {
+    width: 100%;
+    height: 70vh;
+    position: relative;
+    text-align: center;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+
+@media only screen and (min-width: 1250px) { 
+  .sidenav {
+    display: none;
+  } 
+  .icon-burger {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1250px) { 
+  .header-logo { 
+    height: 40px;
+    width: auto; 
+    margin-left: -1vh;
+  } 
+}
+
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  color: black;
+}
+
+.container h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.burger-menu {
+  display: block;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.sidenav {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  height: 100%;
+  width: 250px;
+  background-color: #3c3c3c;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  z-index: 999;
+}
+
+.sidenav.show {
+  left: 0;
+}
+
+.sidenav-menu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidenav-item {
+  border-bottom: 1px solid #555;
+}
+
+.sidenav-link {
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+  color: white;
+  text-decoration: none;
+}
+
+.sidenav-link .me-3 {
+  margin-right: 15px;
+}
+
+.sidenav-link:hover {
+  background-color: #575757;
+}
+
+.sidenav-collapse {
+  display: none;
+  padding-left: 20px;
+}
+
+.sidenav-collapse.show {
+  display: block;
+}
+
+.sidenav-collapse .sidenav-link {
+  padding: 10px 20px;
+}
+
+.sidenav-collapse .sidenav-item {
+  border-bottom: none;
+}
+
+.col{
+  padding: 20px;
+
+
+}
+
+.collapsible-section .collapsible {
+  background-image: linear-gradient(to left, 
+  rgba(20, 208, 255, 0.459), 
+  rgba(20, 208, 255, 0) 50%, 
+  white 50%, 
+  rgba(20, 208, 255, 0) 50%, 
+  rgba(20, 208, 255, 0.459));  
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 3vh;
+  margin-bottom: 5px;
+  transition: 0.5s;
+  color: black;
+  font-weight: 100;
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.collapsible-section .collapsible.active, .collapsible-section .collapsible:hover {
+  background-color: #1599db73;
+}
+
+.collapsible-section .content {
+  max-height: 0;
+  padding: 0 18px;
+  overflow: hidden;
+  background-color: #f1f1f1;
+  margin-bottom: 10px;
+  transition: 0.5s ease-out, padding 0.5s ease-out;
+
+}
+
+.collapsible-section{
+  max-height: 1000vh;
+}
+
+
+.collapsible-section .collapsible.active + .content {
+  max-height: 1000px;
+}
+
+.card {
+  border-radius: 15px;
+  overflow: hidden; 
+  margin-bottom: 5vh;
+}
+
+.large-card {
+  height: 100%; 
+}
+
+.small-card {
+  height: calc(50% - 1.5rem);
+}
+
+.card-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease-in-out;
+}
+
+@media (max-width: 576px) {
+  .large-card, .small-card {
+    margin: 10px 0; 
+  }
+}
+
+
+.card:hover .card-img {
+  transform: scale(1.1); 
+}

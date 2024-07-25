@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Erasmus Malaga - 2024</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="ikona.png" type="image/x-icon">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+
+    <style>
+        body {
+            background-image: linear-gradient(to right, rgba(107, 225, 255, 0.459), transparent);
+        }
+
+        .card {
+            border-color: rgba(20, 208, 255, 0.459);
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="header-content">
+
+            <a href="http://zsdios.pl/"><img src="logo-erasmus.png" alt="Logo" class="header-logo"></a>
+
+        </div>
+
+
+        <nav class="navbar navbar-expand-lg">
+
+
+            <div class="container">
+
+                <nav>
+                    <button class="burger-menu" onclick="toggleMenu()">
+                        <h1><i class="bi bi-list icon-burger" style="color: black;"></i></i></h1>
+                    </button>
+                    <div class="sidenav" id="sidenav-1">
+                        <ul class="sidenav-menu">
+                            <li class="sidenav-item">
+                                <a class="sidenav-link" href="index.html"><i class="bi bi-house"></i>&nbsp; &nbsp;Strona Główna</a>
+                            </li>
+                            <li class="sidenav-item">
+                                <a class="sidenav-link" href="zaangazowani.html"><i class="bi bi-person-bounding-box"></i></i></i>&nbsp; &nbsp;Zaangażowani</a>
+                            </li>
+                            <li class="sidenav-item">
+                                <a class="sidenav-link" href="Wydarzenia.html"><i class="bi bi-calendar-event"></i>&nbsp; &nbsp;Wydarzenia</a>
+                            </li>
+                            <li class="sidenav-item">
+                                <a class="sidenav-link" href="stazysci.html"><i class="bi bi-people"></i>&nbsp; &nbsp;Stażyści</a>
+                            </li>
+                        </ul>
+                        </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+
+                <ul class="navbar-nav ml-auto">
+
+                    <li class="nav-item">
+
+                        <a class="nav-link" href="index.html">Informacje</a>
+
+                    </li>
+
+                    <li class="nav-item">
+
+                        <a class="nav-link" href="zaangazowani.html">Zaangażowani</a>
+
+                    </li>
+
+                    <li class="nav-item">
+
+                        <a class="nav-link" href="wydarzenia.html">Wydarzenia</a>
+
+                    </li>
+
+                    <li class="nav-item active">
+
+                        <a class="nav-link" href="stazysci.html">Stażyści</a>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </nav>
+
+
+    </header>
+
+    <div id="KrauzelaXD" class="carousel slide" data-bs-ride="carousel">
+
+        <div class="carousel-inner">
+
+            <div class="carousel-item active">
+
+                <img src="slide4.jpg" class="d-block w-100" alt="First Slide">
+
+            </div>
+
+            <div class="carousel-item">
+
+                <img src="slide2.jpg" class="d-block w-100" alt="Second Slide">
+
+            </div>
+
+            <div class="carousel-item">
+
+                <img src="slide3.jpg" class="d-block w-100" alt="Third Slide">
+
+            </div>
+
+            <div class="carousel-item">
+
+                <img src="slide1.jpg" class="d-block w-100" alt="Fourth Slide">
+
+            </div>
+
+            <div class="carousel-item">
+
+                <img src="slide5.jpg" class="d-block w-100" alt="Fifth Slide">
+
+            </div>
+
+            <div class="carousel-item">
+
+                <img src="slide6.jpg" class="d-block w-100" alt="Sixth Slide">
+
+            </div>
+
+
+            <div class="carousel-item">
+
+                <img src="slide7.jpg" class="d-block w-100" alt="Sixth Slide">
+
+            </div>
+
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#KrauzelaXD" data-bs-slide="prev">
+
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+
+            <span class="visually-hidden">Previous</span>
+
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#KrauzelaXD" data-bs-slide="next">
+
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+
+            <span class="visually-hidden">Next</span>
+
+        </button> 
+
+    </div>
+
+    <div class="container my-5">
+        <div class="row row-cols-1 row-cols-md-4 g-4 d-flex justify-content-center align-items-stretch align-items-center">
+
+        <div class="col d-flex justify-content-center">
+              <div class="card" style="width: 18rem;">
+                  <img class="card-img-top" src="balik.jpg" alt="Card image cap">
+                  <div class="card-body">
+                      <h5 class="card-title">Patryk Balicki</h5>
+                      <p class="card-text">Ochroniarz "Balik", strzegł lodówki oraz toalety przed pewnym ukraińcem w pokoju 1A. Również chronił Dawida Wołocha podczas najazdu koczownika Bartosza Paszko na jego pokoju. Tester pożywienia stworzonego przez lokalnego naukowca Igora Zalewskiego. </p>
+                      <p class="card-star"><i class="bi bi-star-fill"></i>&nbsp; 10.0</p>
+                  </div>
+              </div>
+          </div>
+          <div class="col d-flex justify-content-center">
+              <div class="card" style="width: 18rem;">
+                  <img class="card-img-top" src="biadun.jpg" alt="Card image cap">
+                  <div class="card-body">
+                      <h5 class="card-title">Mateusz Biadun</h5>
+                      <p class="card-text">Operator "Łysy", przyłapany za niepoprawne wiercenie ziemi podczas pracy geologicznej, w tym może Rafała Margola. Podobnie najlepszy wykręcacz w Maladze, Rafał Margol jest zadowolony współdzielną pracą z Mateuszem Biadunem.</p>
+                      <p class="card-star"><i class="bi bi-star-fill"></i>&nbsp; 10.0</p>
+                  </div>
+              </div>
+          </div>
+          <div class="col d-flex justify-content-center">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="konrad.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Konrad Chwiejczak</h5>
+                    <p class="card-text">Tak zwany "Adrian Kan" w mało popularnej grze "Stacja Kosmiczna 14". Uzależniony lokalny kujon od gier komputerowych. Każdej nocy zabawiał się na laptopie do godziny trzeciej, po czym później miał problemy z wstawaniem rankiem.</p>
+                    <p class="card-star"><i class="bi bi-star-fill"></i>&nbsp; 10.0</p>
+                </div>
+            </div>
+        </div>
+        <div class="col d-flex justify-content-center">
+          <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="garbaz.jpg" alt="Card image cap">
+              <div class="card-body">
+                  <h5 class="card-title">Maciej Garbarz</h5>
+                  <p class="card-text">Szpieg "Homo", znany przedstawiciel grupy "Homoerektus", uczestnik oraz organizator spotkań międzyludzkich, które mają cel terapeutyczny dla weteranów wojny szczurów. W stu procentach normalny człowiek bez żadnych ukrytych podtekstów.
+                </p>
+                  <p class="card-star"><i class="bi bi-star-fill"></i>&nbsp; 10.0</p>
+              </div>
+          </div>
+      </div>
+      <div class="col d-flex justify-content-center">
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="kuba.jpg" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Jakub Maziarz</h5>
+                <p class="card-text">Wywiadowca "Masło", czasami nazywany "ślepa kura" z powodu jego kurzej ślepoty, która zostawia go w stanie wrażliwości gdy jest sam w ciemności. Jest specjalistą do spraw geologicznych. Został raz przyłapany na jedzeniu gruzu podczas praktyk.</p>
+                <p class="card-star"><i class="bi bi-star-fill"></i>&nbsp; 10.0</p>
+            </div>
+        </div>
+    </div>
+    <div class="col d-flex justify-content-center">
+      <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="margol.jpg" alt="Card image cap">
+          <div class="card-body">
+              <h5 class="card-title">Rafał Margol</h5>
+              <p class="card-text">Geolog "Lewy". Znany z jego niesamowitej siły lewej ręki, którą opowiada na bardzo lewe tematy. Bity i nękany przez każdą inną prawo ręczną osobę w hostelu. Widziany jako osoba o gorszej seksualność od innych. Podoba mu się gdy Mateusz Tryka przy nim jest.</p>
+              <p class="card-star"><i class="bi bi-star-fill"></i>&nbsp; 10.0</p>
+          </div>
+      </div>
+  </div>
+  <div class="col d-flex justify-content-center">
+    <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="piza.jpg" alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title">Zuzanna Nakilcka</h5>
+            <p class="card-text">Ogon "Piza", jedyna osoba płci damskiej z  15 stażystów. Uwielbia znęcać się nad rówieśnikami z pokoju obok. Łukasz Puk wielokrotnie zgłaszał jej złośliwe zachowanie, jednak było to ignorowane przez innych.</p>
+            <p class="card-star"><i class="bi bi-star-fill"></i>&nbsp; 10.0</p>
+        </div>
+    </div>
+</div>
+<div class="col d-flex justify-content-center">
+  <div class="card" style="width: 18rem;">
+      <img class="card-img-top" src="oszust.jpg" alt="Card image cap">
+      <div class="card-body">
+          <h5 class="card-title">Mateusz Oszust</h5>
+          <p class="card-text">Hazardzista "Żeton", fanatyk lodów cytrynowych, wymyślił trend na Emoji wiadomości😎🤙, zastępca Mateusza Grabiasa, spec od bukmacherki, artysta kombinator, postrach lewaków (szczególnie pewnego R. M.[bohater Kraśnika])</p>
+          <p class="card-star"><i class="bi bi-star-fill"></i>&nbsp; 10.0</p>
+      </div>
+  </div>
+</div>
+<div class="col d-flex justify-content-center">
+  <div class="card" style="width: 18rem;">
+      <img class="card-img-top" src="paszko.jpg" alt="Card image cap">
+      <div class="card-body">
+          <h5 class="card-title">Bartek Paszko</h5>
+          <p class="card-text">Kolaborant "Papież", małpka pokoju 1A, gryzoń. Uwielbia szantażować swoich rówieśników, napędzając swój uśmiech. Piroman, fan ognia i eksplozji, jego zwyczaj to robienie improwizowanych ładunków wybuchowych korzystając z dezodorantu, zapalniczki i plastikowej butelki.</p>
+          <p class="card-star"><i class="bi bi-star-fill"></i>&nbsp; 10.0</p>
+      </div>
+  </div>
+</div>
+<div class="col d-flex justify-content-center">
+  <div class="card" style="width: 18rem;">
+      <img class="card-img-top" src="luk.jpg" alt="Card image cap">
+      <div class="card-body">
+          <h5 class="card-title">Łukasz Puk</h5>
+          <p class="card-text">Konfident "ŁuuuuuuukPuuuuuuk". Osoba, która bezkarnie kradnie internet "GuestMalaga2022" każdej kobiecie i dziecku w apartamencie. Specjalnie zabrał na samolot 3 terabajtowy dysk HDD po to aby kraść hiszpański internet instalując swoje świrnięte gry.</p>
+          <p class="card-star"><i class="bi bi-star-fill"></i>&nbsp; 10.0</p>
+      </div>
+  </div>
+</div>
+<div class="col d-flex justify-content-center">
+  <div class="card" style="width: 18rem;">
+      <img class="card-img-top" src="kacper.jpg" alt="Card image cap">
+      <div class="card-body">
+          <h5 class="card-title">Kacper Świstek</h5>
+          <p class="card-text">Wtyczka "PNG". Diler perfum, które sam ukradł od branży sklepów "Primor". Każda ekspedientka się go boi gdy bez żadnych skrupułów testuje ekstremalnie drogie perfumy na swoim własnym ciele. Wysyłany na ekspedycję do wielu różnych galerii w Maladze.</p>
+          <p class="card-star"><i class="bi bi-star-fill"></i>&nbsp; 10.0</p>
+      </div>
+  </div>
+</div>
+<div class="col d-flex justify-content-center">
+  <div class="card" style="width: 18rem;">
+      <img class="card-img-top" src="tryka.jpg" alt="Card image cap">
+      <div class="card-body">
+          <h5 class="card-title">Mateusz Tryka</h5>
+          <p class="card-text">Informator "Niedożywka". Wiecznie niedożywiony i głodny, podczas każdego posiłku zabiera potrójną porcję wszystkim innym przy stole. Krytykowany przez jego niezmierny głód i dziwne dotyki z Rafałem Margolem w pokoju 1C.</p>
+          <p class="card-star"><i class="bi bi-star-fill"></i>&nbsp; 10.0</p>
+      </div>
+  </div>
+</div>
+<div class="col d-flex justify-content-center">
+  <div class="card" style="width: 18rem;">
+      <img class="card-img-top" src="dawid.jpg" alt="Card image cap">
+      <div class="card-body">
+          <h5 class="card-title">Dawid Wołoch</h5>
+          <p class="card-text">Dowódca "Major". Dawid, "niepijący" niezmierne ilości substancji zawierających "etanol". Miłośnik uniwersum szkolnej 17. Rzadki użytkownik słow "ógółem" oraz "całe te".
+        </p>
+          <p class="card-star"><i class="bi bi-star-fill"></i>&nbsp; 10.0</p>
+      </div>
+  </div>
+</div>
+<div class="col d-flex justify-content-center">
+  <div class="card" style="width: 18rem;">
+      <img class="card-img-top" src="igor.jpg" alt="Card image cap">
+      <div class="card-body">
+          <h5 class="card-title">Igor Zalewski</h5>
+          <p class="card-text">Detektyw "Dziwny", lub pod przykrywką "Artur Rejestr". Znany audiofil i miłośnik słuchawek. Niestabilny psychicznie, uciekinier z radecznickiego szpitalu psychiatrycznego. Czasem przezywany małpką z powodu jego dziwnych jęków dziennych.
+        </p>
+          <p class="card-star"><i class="bi bi-star-fill"></i>&nbsp; 10.0</p>
+      </div>
+  </div>
+</div>
+<div class="col d-flex justify-content-center">
+  <div class="card" style="width: 18rem;">
+      <img class="card-img-top" src="cygan.png" alt="Card image cap">
+      <div class="card-body">
+          <h5 class="card-title">Sviatoslav Zinchenko</h5>
+          <p class="card-text">Prorok "a-фторсульфо-нилоксиалканперфторкарбонова кислота". Rabuś z kolekcji zabawek "LEGO" czy również "DUPLO". Jego czarna czapka wyznaje zbrodnie i przedmioty, które zabrał po godzinie 24. Jedyny przedstawiciel populacji ukraińskiej na Erasmusie 2024.
+        </p>
+          <p class="card-star"><i class="bi bi-star-fill"></i>&nbsp; 10.0</p>
+      </div>
+  </div>
+</div>
+
+
+
+        </div>
+  </div>
+
+        <hr class="white-hr mt-4">
+
+        <footer>Strona utworzona przez dwie osoby w biurze.</footer>
+
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-vtclXtF4v+Y5e0p+4Y5v7tfI1Y7jkx6wuN0RvEo/MvY/dXl2DwrXoc+W4bbBM90+" crossorigin="anonymous"></script>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+
+      <script src="js.js"></script>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  </body>
+
+ </html>
